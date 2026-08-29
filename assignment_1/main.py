@@ -38,9 +38,9 @@ def save_camera_information():
     cv2.destroyAllWindows()
 
 def main():
+    image = cv2.imread('iris-1.jpg')
     # Image working test
     # show_image(image)
-    image = cv2.imread('iris-1.jpg')
     #Ass4
     print_image_information(image)
     # #Ass5

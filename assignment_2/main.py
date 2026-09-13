@@ -14,7 +14,7 @@ def crop(image, x_0, x_1, y_0, y_1):
 
 def resize(image, width, height):
     resized = cv2.resize(image, (width, height))
-    cv2.imshow("Resized_qiris-1.png", resized)
+    cv2.imshow("Resized_iris-1.png", resized)
     cv2.imwrite("solutions/Resized_iris-1.png", resized)
 
 def copy(image, emptyPictureArray):

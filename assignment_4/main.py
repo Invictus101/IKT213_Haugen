@@ -22,7 +22,6 @@ def SIFT(image_to_align, reference_image, max_features, good_match_precent):
     gray_align = cv2.cvtColor(image_to_align, cv2.COLOR_BGR2GRAY)
     gray_ref = cv2.cvtColor(reference_image, cv2.COLOR_BGR2GRAY)
 
-    # Initiate SIFT detector
     sift = cv2.SIFT_create()
 
     kp1, des1 = sift.detectAndCompute(gray_align, None)
@@ -82,6 +81,9 @@ def main():
     aligning = cv2.imread('align_this.jpg')
 
     Harris_corner_detection(image)
+
+
+    image = cv2.imread('reference_img.png')
 
     SIFT(aligning, image, 10, 0.7)
 
